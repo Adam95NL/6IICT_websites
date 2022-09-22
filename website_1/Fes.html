@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<!--
+  ___ __  __   _   ___ _____ ___  ___ _  _  ___   ___  _
+ / __|  \/  | /_\ | _ \_   _/ __|/ __| || |/ _ \ / _ \| |
+ \__ \ |\/| |/ _ \|   / | | \__ \ (__| __ | (_) | (_) | |__
+ |___/_|  |_/_/ \_\_|_\ |_| |___/\___|_||_|\___/ \___/|____|
+
+Did you know you can get paid to read other people's code?
+
+We're looking for PHP developers.
+Join us: https://www.smartschool.be/jobs
+-->
+<html>
+    <head>
+                    <title>Mosa-RT - Smartschool</title>
+            <meta charset="utf-8">
+            <meta http-equiv="x-ua-compatible" content="ie=edge">
+                            <link rel="icon" href="https://static1.smart-school.net/smsc/svg/favicon/favicon.svg">
+                <link rel="mask-icon" href="https://static3.smart-school.net/smsc/svg/favicon/mask-icon.svg" color="#ff520e">
+                <link rel="apple-touch-icon" href="https://static3.smart-school.net/smsc/img/favicon/apple-touch-icon.png">
+                <link rel="manifest" href="/manifest.json">
+                                                                    
+                
+        <!-- jQuery & jQueryUI -->
+                    <script type="text/javascript" src="https://static1.smart-school.net/smsc/resources/jquery/2.1.4/jquery.min.rev-c89c1f7cf0.js"></script>
+    
+                    <script type="text/javascript" src="https://static5.smart-school.net/smsc/resources/jqueryui/1.12.1/jquery-ui.min.rev-3c40cf03c2.js"></script>
+    
+                    <link href="https://static3.smart-school.net/smsc/resources/jqueryui/1.12.1/jquery-ui.min.rev-dfe2eb3f7a.css" rel="stylesheet" />
+    
+
+                                                <link href="https://static5.smart-school.net/production/Topnav/main.rev-7c52949ffd.css" rel="stylesheet" />
+    
+                    
+                            <link href="https://static5.smart-school.net/modules/Homepage/dist/main-built.rev-b1a66dad1a.css" rel="stylesheet" />
+    
+            
+                        <!-- TinyMCE HEAD -->
+                                    <script src="https://static5.smart-school.net/wysiwyg/tinymce-version-6.1.0/js/tinymce/tinymce.min.rev-e1153e7b39.js"></script>
+
+                            <!-- javascriptContent HEAD -->
+        <!-- javascriptURL HEAD -->
+                                <script type="text/javascript" src="https://static3.smart-school.net/smsc/resources/jqueryui/langs/jquery.ui.datepicker-nl-BE.min.rev-423f605da0.js"></script>
+            <script type="text/javascript" src="https://static5.smart-school.net/includes/jQuery/plugins/timepicker/timepicker.rev-bad5f5c79a.js"></script>
+    
+                <!-- javascriptContent HEAD -->
+                        
+                    </head>
+    <body class=" modern-ui">
+                                    <a href="javascript://" class="skip-link js-skip-link">Spring naar hoofdcontent</a>
+<div id="topnavMenuOverlay" class="topnav-menu-overlay" hidden></div>
+<header id="smscTopContainer" class="smsc-topnav">
+  <nav class="topnav">
+    <div data-profile class="topnav__btn-wrapper">
+        <button class="js-btn-profile topnav__btn topnav__btn--profile">
+            <img src="https://userpicture10.smartschool.be/User/Userimage/hashimage/hash/3627_f1f894aa-0019-4c2f-ad87-b2f7e7424e72/plain/1/res/48" alt="Profiel afbeelding"/>
+            <div class="hlp-vert-box">
+                <span>Adam Ariss</span>
+                <span class="topnav__btn__light"></span>
+            </div>
+            <div class="topnav__menu-arrow" aria-hidden="true"></div>
+        </button>
+        <div id="profileMenu" class="topnav__menu-wrapper" tabindex="-1" hidden>
+            <div class="topnav__menu">
+                <a href="/index.php?module=Profile" class="topnav__menuitem topnav__menuitem--img" role="menuitem">
+                    <img src="https://userpicture10.smartschool.be/User/Userimage/hashimage/hash/3627_f1f894aa-0019-4c2f-ad87-b2f7e7424e72/plain/1/res/48" alt="Profiel afbeelding"/>
+                    <span>Profiel</span>
+                </a>
+                <a href="/Profile/Notify" class="topnav__menuitem topnav__menuitem--icon topnav__menuitem--icon--notifs" role="menuitem">Instellingen berichtgeving</a>
+                <ul class="profile-blocks js-profile-blocks"></ul>
+            </div>
+        </div>
+    </div>
+
+    
+    
+    
+    <a href="/" class="js-btn-home topnav__btn topnav__btn--push-right">Start</a>
+
+    <div data-shortcuts class="topnav__btn-wrapper">
+        <button class="js-btn-shortcuts topnav__btn">
+          Ga naar
+          <div class="topnav__menu-arrow" aria-hidden="true"></div>
+        </button>
+        <div id="shortcutsMenu" class="topnav__menu-wrapper" tabindex="-1" hidden>
+          <div class="topnav__menu topnav__menu--shortcuts js-shortcuts-container js-autosize">
+                  
+    <a href="/index.php?module=Messages&amp;file=index&amp;function=main"
+       class="topnav__menuitem topnav__menuitem--icon module-messages--24"
+       role="menuitem"       title="Berichten">
+        Berichten
+    </a>
+                        
+    <a href="/index.php?module=Survey&amp;file=index&amp;function=main&amp;courseID=0"
+       class="topnav__menuitem topnav__menuitem--icon module-survey--24"
+       role="menuitem"       title="Enquête">
+        Enquête
+    </a>
+                        
+    <a href="/index.php?module=Forum&amp;file=index&amp;function=main"
+       class="topnav__menuitem topnav__menuitem--icon module-forum--24"
+       role="menuitem"       title="Forum">
+        Forum
+    </a>
+                        
+    <a href="/helpdesk"
+       class="topnav__menuitem topnav__menuitem--icon module-ticket--24"
+       role="menuitem"       title="Helpdesk">
+        Helpdesk
+    </a>
+                        
+    <a href="/intradesk"
+       class="topnav__menuitem topnav__menuitem--icon module-intradesk--24"
+       role="menuitem"       title="Intradesk">
+        Intradesk
+    </a>
+                        
+    <a href="/index.php?module=Calendar"
+       class="topnav__menuitem topnav__menuitem--icon module-calendar--24"
+       role="menuitem"       title="Kalender">
+        Kalender
+    </a>
+                        
+    <a href="/index.php?module=LVS&amp;file=index&amp;function=main"
+       class="topnav__menuitem topnav__menuitem--icon module-lvs--24"
+       role="menuitem"       title="Leerlingvolgsysteem">
+        Leerlingvolgsysteem
+    </a>
+                        
+    <a href="/timetable"
+       class="topnav__menuitem topnav__menuitem--icon module-timetable--24"
+       role="menuitem"       title="Lesrooster">
+        Lesrooster
+    </a>
+                        
+    <a href="/mydoc"
+       class="topnav__menuitem topnav__menuitem--icon module-mydoc--24"
+       role="menuitem"       title="Mijn documenten">
+        Mijn documenten
+    </a>
+                        
+    <a href="/Studentcard"
+       class="topnav__menuitem topnav__menuitem--icon module-studentcard--24"
+       role="menuitem"       title="Mijn leerlingfiche">
+        Mijn leerlingfiche
+    </a>
+                        
+    <a href="/index.php?module=News&amp;file=index"
+       class="topnav__menuitem topnav__menuitem--icon module-news--24"
+       role="menuitem"       title="Nieuwsberichten">
+        Nieuwsberichten
+    </a>
+                        
+    <a href="/online-session"
+       class="topnav__menuitem topnav__menuitem--icon module-onlinesession--24"
+       role="menuitem"       title="Online sessies">
+        Online sessies
+    </a>
+                        
+    <a href="/parent-contact/"
+       class="topnav__menuitem topnav__menuitem--icon module-introlution--24"
+       role="menuitem"       title="Oudercontact">
+        Oudercontact
+    </a>
+                        
+    <a href="/index.php?module=Portfolio&amp;file=index&amp;function=main"
+       class="topnav__menuitem topnav__menuitem--icon module-portfolio--24"
+       role="menuitem"       title="Portfolio">
+        Portfolio
+    </a>
+                        
+    <a href="/results"
+       class="topnav__menuitem topnav__menuitem--icon module-results--24"
+       role="menuitem"       title="Resultaten">
+        Resultaten
+    </a>
+                        
+    <a href="/index.php?module=Agenda"
+       class="topnav__menuitem topnav__menuitem--icon module-agenda--24"
+       role="menuitem"       title="Schoolagenda">
+        Schoolagenda
+    </a>
+                        
+    <a href="/index.php?module=Wiki"
+       class="topnav__menuitem topnav__menuitem--icon module-wiki--24"
+       role="menuitem"       title="Wiki">
+        Wiki
+    </a>
+                                <hr class="menu-divider"/>
+            
+    <a href="/index.php?module=Manual&amp;file=manual&amp;function=main"
+       class="topnav__menuitem topnav__menuitem--icon module-manual--24"
+       role="menuitem"       title="Handleiding">
+        Handleiding
+    </a>
+                                <hr class="menu-divider"/>
+            
+    <a href="https://www.diddit.be/login?smartschoolPlatform=mosa-rt"
+       class="topnav__menuitem topnav__menuitem--icon partner-diddit--24"
+       role="menuitem" target="_blank"       title="diddit">
+        diddit
+    </a>
+                        
+    <a href="https://digitalemethode.be/nl-be/sso?subdomain=mosa-rt"
+       class="topnav__menuitem topnav__menuitem--icon partner-signpost-digtale-methode--24"
+       role="menuitem" target="_blank"       title="Digitale Methode">
+        Digitale Methode
+    </a>
+                        
+    <a href="https://www.disco-averbode.be/login/smartschool?platform=mosa-rt"
+       class="topnav__menuitem topnav__menuitem--icon partner-averbode-disco--24"
+       role="menuitem" target="_blank"       title="Disco">
+        Disco
+    </a>
+                        
+    <a href=" https://platform.ftrprf.be/"
+       class="topnav__menuitem topnav__menuitem--icon partner-ftrprf--24"
+       role="menuitem" target="_blank"       title="FTRPRF">
+        FTRPRF
+    </a>
+                        
+    <a href="https://myway.i-learn.be/login?smartschoolPlatform=mosa-rt"
+       class="topnav__menuitem topnav__menuitem--icon partner-ilearn--24"
+       role="menuitem" target="_blank"       title="i-Learn">
+        i-Learn
+    </a>
+                        
+    <a href="/Partner/VRT/KLAAR"
+       class="topnav__menuitem topnav__menuitem--icon partner-vrtklaar--24"
+       role="menuitem" target="_blank"       title="KLAAR">
+        KLAAR
+    </a>
+                        
+    <a href="https://www.pelckmansportaal.be"
+       class="topnav__menuitem topnav__menuitem--icon partner-pelckmans--24"
+       role="menuitem" target="_blank"       title="Pelckmans Portaal">
+        Pelckmans Portaal
+    </a>
+                        
+    <a href="https://api.polpo.be/auth/smartschool-login/https%3A%2F%2Fwww.polpo.be%2Fplatform%2F?type=student&amp;platform=mosa-rt"
+       class="topnav__menuitem topnav__menuitem--icon partner-polpo--24"
+       role="menuitem" target="_blank"       title="POLPO">
+        POLPO
+    </a>
+                        
+    <a href="https://www.scoodle.be/Aanmelden/External?Provider=Smartschool&amp;Platform=mosa-rt.smartschool.be"
+       class="topnav__menuitem topnav__menuitem--icon partner-scoodle--24"
+       role="menuitem" target="_blank"       title="Scoodle">
+        Scoodle
+    </a>
+
+          </div>
+        </div>
+    </div>
+
+    <div data-courses class="topnav__btn-wrapper">
+        <button class="js-btn-courses topnav__btn">
+            Vakken
+        </button>
+    </div>
+
+    
+        <a href="/index.php?module=Messages&file=index&function=main" class="js-btn-messages topnav__btn">Berichten
+        <span class="js-badge-msg topnav__badge" role="status" aria-label="0 ongelezen berichten" aria-live="polite" aria-relevant="additions" hidden>0</span>
+    </a>
+    
+    <div data-notifs class="topnav__btn-wrapper">
+        <button class="js-btn-notifs topnav__btn">Meldingen
+            <span class="js-badge-notifs topnav__badge" role="status" aria-label="0 ongelezen meldingen" aria-live="polite" aria-relevant="additions" hidden>0</span>
+        </button>
+    </div>
+      
+    <div data-search class="topnav__btn-wrapper">
+        <button class="js-btn-search topnav__btn topnav__btn--icon topnav__btn--icon--search" newIntradeskEnabled="" title="Zoeken"></button>
+    </div>
+    <a href="/index.php?module=Manual&file=manual&function=main" class="js-btn-manual topnav__btn topnav__btn--icon topnav__btn--icon--manual" title="Handleiding"></a>
+    <a href="/logout" class="js-btn-logout topnav__btn topnav__btn--icon topnav__btn--icon--exit" title="Afmelden"></a>
+  
+  </nav>
+    
+</header>
+
+                    		<div id="smscMain" class="smscMain " tabindex="-1">
+			    <input type="hidden" id="datepickerAgenda" value="1"/>
+<input type="hidden" id="datepickerCalendar" value="1"/>
+<input type="hidden" id="datepickerPlanner" value="0"/>
+<div id="datePickerMenu" agendaurl="/index.php?module=Agenda" plannerurl="/planner/main/user/3627_14025_0/" class="datePickerMenu"></div>
+<div id="container" class="homepage">
+	<div id="leftcontainer" class="smsc-container--left homepage__left"><div class="homepage__block" id="homepage__block--11245">
+    
+    <!-- BEGIN top -->
+    <div class="homepage__block__top">
+        <div class="homepage__block__top__title">
+            <h2 class="smsc-title--1" style="color: #0000aa">NBN-normen</h2>
+        </div>
+        <div class="homepage__block__top__buttonbar"></div>
+    </div>
+    <!-- END top -->
+    <div class="homepage__block__content">
+        <p><a href="https://edu.mynbn.be/smartschool" target="_blank" title="NBN-normen" rel="noopener"><img src="/public/mosa-rt/Images/7ap4oeePzHgKIS4zduSBsjSTS1598435018.JPG" border="0" /></a></p>
+    </div>
+</div><div class="homepage__block" id="homepage__block--14305">
+    
+    <!-- BEGIN top -->
+    <div class="homepage__block__top">
+        <div class="homepage__block__top__title">
+            <h2 class="smsc-title--1" style="color: #0000aa">Alternatieve dienstverlening: 21 sept 2022</h2>
+        </div>
+        <div class="homepage__block__top__buttonbar"></div>
+    </div>
+    <!-- END top -->
+    <div class="homepage__block__content">
+        <p><a href="https://www.delijn.be/nl/nieuws/alternatieve-dienstverlening/" target="_blank" title="Alternatieve dienstverlening" rel="noopener"><img src="/public/mosa-rt/Images/Lm5YQPCaFDvKYkUANH4H4AtAi1663653633.PNG" border="0" width="162" height="156"></a></p>
+    </div>
+</div></div>
+	<div id="centercontainer" class="smsc-container--main homepage__center"><div class="homepage__block" modname="news_in_de_kijker_8267" newsID="8267">
+    
+    <!-- BEGIN frametitle -->
+        <div class="homepage__block__top">
+            <div class="homepage__block__top__title">
+                <h2 class="smsc-title--1" style="color: #0000aa">Campus in een notendop (Lln) </h2>
+            </div>
+            <div class="homepage__block__top__buttonbar"></div>
+        </div>
+    <!-- END frametitle -->
+    <div class="homepage__block__content">
+        <table style="border-collapse: collapse; width: 83.6291%; height: 330px;" border="1">
+<tbody>
+<tr>
+<td style="width: 31.3189%; text-align: center;"><a href="/deeplink/3627/04bdc2b4-eba8-42b0-9820-d940ddf2944d" target="_blank" title="Taken- en toetsenblaadjes 2020-2021 " rel="noopener"></a><a id="intradesktn94Cq9TfKx2c82vacw3BF1HE" href="/deeplink/3627/7bd52862-ea88-440f-99ca-2af7fe95ab60" target="_blank" title="Taken- en toetsenblaadjes " rel="noopener"><img src="/public/mosa-rt/Images/MxYNwpcjJUHqtPQrCdyWIqLkn1566300304.PNG" border="0"></a><a id="intradeskQXaEPO8UKwHbuLAN9AHD5ymCi" href="/deeplink/3627/04bdc2b4-eba8-42b0-9820-d940ddf2944d" target="_blank" title="Taken- en toetsenblaadjes 2020-2021 " rel="noopener"></a></td>
+<td style="width: 33.8831%; text-align: center;"><a href="https://www.mosa-rt.be" target="_blank" title="Website MosaRT" rel="noopener"><img src="/public/mosa-rt/Images/GIhQANsj3mh3e6rTtzKF2bbUE1661335096.JPG" border="0" width="117" height="133"></a></td>
+<td style="width: 34.7988%; text-align: center;"><a id="intradesk6cwP8IU7kNBEefVD7voQgZFnR" href="/deeplink/3627/4cb3c3a1-1c2c-4464-9337-7d92d9bd0cfb" target="_blank" title="Taaltroubles " rel="noopener"><img src="/public/mosa-rt/Images/94Za5cgJjxQTHdVtKTaQv8ZZi1571981829.PNG" border="0" width="116" height="117"></a></td>
+</tr>
+<tr>
+<td style="width: 31.3189%; text-align: center;"><strong>Huiswerkblaadjes</strong></td>
+<td style="width: 33.8831%; text-align: center;"><strong>Website&nbsp;</strong></td>
+<td style="width: 34.7988%; text-align: center;"><strong>Taaltroubles</strong></td>
+</tr>
+<tr>
+<td style="width: 31.3189%; text-align: center;"><a id="intradeskdkPOfh8wweScom4eKEzVJFITK" href="/deeplink/3627/7ddb482f-212e-4b4f-af52-d753078f8e1b" target="_blank" title="01 Maandplanner " rel="noopener"><img src="/public/mosa-rt/Images/gWEKyToaezZTLTJxDTMndkEz91661335553.JPG" border="0" width="186" height="137"></a></td>
+<td style="width: 33.8831%; text-align: center;"><a id="intradeskL53zXT9lzfhFrp6u5SxhRooWD" href="/deeplink/3627/a3a0dae3-d7ae-4bcb-bf09-9fc87bf406be" target="_blank" title="2020 - 2021 " rel="noopener"><img src="/public/mosa-rt/Images/75ItwqNSUbbKgxwYDPJvH9eD61566303300.PNG" border="0"></a></td>
+<td style="width: 34.7988%; text-align: center;">&nbsp;<a id="intradeski8BcrN4KMp6ze8yJX4bhECJho" href="/deeplink/3627/7ddb482f-212e-4b4f-af52-d753078f8e1b" target="_blank" title="01 Maandplanner " rel="noopener"><img src="/public/mosa-rt/Images/mY3tkJvVwaiwHTotTAys8xBIG1661335610.JPG" border="0" width="188" height="138"></a></td>
+</tr>
+<tr>
+<td style="width: 31.3189%; text-align: center;"><strong>Maandplanner DOD DGD D/A</strong></td>
+<td style="width: 33.8831%; text-align: center;"><strong>Wekelijkse mededelingen</strong></td>
+<td style="width: 34.7988%; text-align: center;"><strong>Maandplanner A</strong></td>
+</tr>
+</tbody>
+</table>
+    </div>
+</div><div class="homepage__block" modname="news_in_de_kijker_11225" newsID="11225">
+    
+    <!-- BEGIN frametitle -->
+        <div class="homepage__block__top">
+            <div class="homepage__block__top__title">
+                <h2 class="smsc-title--1" style="color: #0000aa">Jaarleuze 2022-2023</h2>
+            </div>
+            <div class="homepage__block__top__buttonbar"></div>
+        </div>
+    <!-- END frametitle -->
+    <div class="homepage__block__content">
+        <p><img src="/public/mosa-rt/Images/QzEGwN2SVqk5SHzxz9HxH9BnA1660988432.JPG" border="0" width="508" height="171" style="display: block; margin-left: auto; margin-right: auto;"></p>
+    </div>
+</div><div class="homepage__block" modname="news_in_de_kijker_14283" newsID="14283">
+    
+    <!-- BEGIN frametitle -->
+        <div class="homepage__block__top">
+            <div class="homepage__block__top__title">
+                <h2 class="smsc-title--1" style="color: #0000aa">CREA</h2>
+            </div>
+            <div class="homepage__block__top__buttonbar"></div>
+        </div>
+    <!-- END frametitle -->
+    <div class="homepage__block__content">
+        <p><img src="/public/mosa-rt/Images/DS5uccj4QK3no38WIcoZeqYrj1663146441.PNG" border="0" width="478" height="667" style="display: block; margin-left: auto; margin-right: auto;"></p>
+    </div>
+</div><div class="homepage__block" id="homepage__block--news">
+    <!-- BEGIN frametitle -->
+        <div class="homepage__block__top">
+            <div class="homepage__block__top__title">
+                <h2 class="smsc-title--1" style="color: #C90001">Nieuws</h2>
+            </div>
+            <div class="homepage__block__top__buttonbar"></div>
+        </div>
+    <!-- END frametitle -->
+    <div class="homepage__block__content">
+        <div id="news_items"></div>
+    </div>
+</div><div class="homepage__block" modname="news_in_de_kijker_6185" newsID="6185">
+    
+    <!-- BEGIN frametitle -->
+        <div class="homepage__block__top">
+            <div class="homepage__block__top__title">
+                <h2 class="smsc-title--1" style="color: #c90001">Gratis voorleessoftware voor leerlingen met een dyslexieattest</h2>
+            </div>
+            <div class="homepage__block__top__buttonbar"></div>
+        </div>
+    <!-- END frametitle -->
+    <div class="homepage__block__content">
+        <p style="text-align: center;"><img src="/public/kasomk/Images/dwgUYkaAgMYEFRUJhuRjiLjyo1510297101.JPG" border="0" width="241" height="184" /></p>
+<p style="text-align: center;"><span style="font-size: 24px;">GRATIS <strong>VOORLEESSOFTWARE</strong> VOOR LEERLINGEN MET EEN <strong>DYSLEXIEATTEST</strong>: <a href="https://www.sprintplus.be/nl/producten/categorieen/leesvoor-vlaanderen" target="_blank" rel="noopener"><strong>KLIK HIER</strong>!&nbsp;</a></span></p>
+    </div>
+</div><div class="homepage__block" modname="news_in_de_kijker_4118" newsID="4118">
+    
+    <!-- BEGIN frametitle -->
+        <div class="homepage__block__top">
+            <div class="homepage__block__top__title">
+                <h2 class="smsc-title--1" style="color: #008800">Medisch attest bij niet deelnemen les LO</h2>
+            </div>
+            <div class="homepage__block__top__buttonbar"></div>
+        </div>
+    <!-- END frametitle -->
+    <div class="homepage__block__content">
+        <p><span style="font-size: 14px;"><a id="tree8pZvULnFDwBgCOQ7fbRlKsOP8" href="/Browse/Index/Index/redirParam/YTo3OntzOjQ6ImdvVG8iO3M6MTI6ImNvdXJzZU1vZERldCI7czozOiJjSUQiO2k6MDtzOjM6Im1vZCI7czo5OiJJbnRyYWRlc2siO3M6NDoiZmlsZSI7czoxOiIxIjtzOjU6InBhcklEIjtzOjQ6IjMxNDYiO3M6MzoiZElEIjtzOjQ6Ijg3MDQiO3M6NDoic3NJRCI7czo0OiIzNjI3Ijt9" target="_blank" title="&lt;b&gt;medisch attest bij niet deelnemen les LO.pdf&lt;/b&gt; ">Klik hier</a> wanneer je een leeg<em> medisch attest bij niet deelnemen les LO</em> wil downloaden. Ga hiermee naar je huisarts en laat het invullen. Bezorg het attest zo snel mogelijk terug aan je leraar LO.&nbsp;</span></p>
+<p><span style="font-size: 14px;"><strong>Let op</strong>! Dit attest is enkel geldig met een stempel &eacute;n een handtekening van de geneesheer.&nbsp;</span></p>
+    </div>
+</div><div class="homepage__block" id="homepage__block--student-support">
+    <!-- BEGIN frametitle -->
+        <div class="homepage__block__top">
+            <div class="homepage__block__top__title">
+                <h2 class="smsc-title--1" style="color: #C90001">Diensten voor jongeren</h2>
+            </div>
+            <div class="homepage__block__top__buttonbar"></div>
+        </div>
+    <!-- END frametitle -->
+    <div class="homepage__block__content">
+        <div id="student_support"></div>
+    </div>
+</div></div>
+	<div id="rightcontainer" class="smsc-container--right homepage__right"><div class="homepage__block" id="homepage__block--datepicker">
+    
+    <div class="homepage__block__content">
+        <div id="homeAgenda"></div>
+    </div>
+</div><div class="homepage__block" id="homepage__block--13993">
+    
+    <!-- BEGIN top -->
+    <div class="homepage__block__top">
+        <div class="homepage__block__top__title">
+            <h2 class="smsc-title--1" style="color: #0000aa">Leerschijf BB</h2>
+        </div>
+        <div class="homepage__block__top__buttonbar"></div>
+    </div>
+    <!-- END top -->
+    <div class="homepage__block__content">
+        <p><a id="Wiki1AH8OCuvKfPvMbL3IST9uTWyy" href="/Browse/Index/Index/redirParam/YTo3OntzOjQ6ImdvVG8iO3M6MTI6ImNvdXJzZU1vZERldCI7czozOiJjSUQiO2k6MDtzOjM6Im1vZCI7czo0OiJXaWtpIjtzOjQ6InNzSUQiO2k6MzYyNztzOjQ6ImZpbGUiO2k6MTtzOjU6InBhcklEIjtpOjA7czozOiJkSUQiO3M6MzoiMzEzIjt9" target="_blank" title="Leerschijf BB " rel="noopener"><img src="/public/mosa-rt/Images/4iQNvJZ9E3PiSUzffLdubfkjs1661260401.PNG" border="0" width="202" height="204"></a></p>
+    </div>
+</div><div class="homepage__block" id="homepage__block--bibnet">
+    
+    <div class="homepage__block__content">
+        <a class="homepage__image-link" href="http://www.bibliotheek.be/" target='_blank'>
+    <div class="homepage__image-link__image smsc-svg--logo_de_bib" title="BibNet"></div>
+</a>
+<div class="homepage__search">
+    <input id="bibnetQuery" type="search" size="23" maxlength="255" onkeydown="javascript:if(event.keyCode == 13){window.open('https://maaseik.bibliotheek.be/catalogus?q=' + $('#bibnetQuery').val().replace(' ', '+'));return false}" required />
+    <button class="smscButton grey" onclick="javascript:window.open('https://maaseik.bibliotheek.be/catalogus?q=' + $('#bibnetQuery').val().replace(' ', '+'));return false;">Zoeken</button>
+</div>
+    </div>
+</div></div>
+</div>
+<script type="text/javascript" language="javascript">
+var _JANUARI		= 'januari';	
+var _FEBRUARI		= 'februari';	
+var _MAART			= 'maart';	
+var _APRIL			= 'april';	
+var _MEI			= 'mei';	
+var _JUNI			= 'juni';	
+var _JULI			= 'juli';	
+var _AUGUSTUS		= 'augustus';	
+var _SEPTEMBER		= 'september';	
+var _OKTOBER		= 'oktober';	
+var _NOVEMBER		= 'november';	
+var _DECEMBER		= 'december';
+
+var _MAANDAGKORT	= 'ma';	
+var _DINSDAGKORT	= 'di';
+var _WOENSDAGKORT	= 'wo';
+var _DONDERDAGKORT	= 'do';
+var _VRIJDAGKORT	= 'vr';
+var _ZATERDAGKORT	= 'za';
+var _ZONDAGKORT		= 'zo';
+
+var _unixtimedate = '1663840738';
+var _getItemsurl = '/index.php?module=Homepage&function=getCalendarItems';
+var _calendarUrl = '/index.php?module=Calendar';
+
+</script>
+		</div>
+                
+        <!-- javascript variables -->
+        <script type="text/javascript">var SMSC = SMSC || {};</script>
+                                        <script type="text/javascript">$.extend(true, SMSC, JSON.parse('\u007B\u0022vars\u0022\u003A\u007B\u0022showNotifyAlerts\u0022\u003Atrue,\u0022isMP\u0022\u003Afalse,\u0022tracklogging\u0022\u003Atrue,\u0022storageToken\u0022\u003A\u0022be182905a0f53160cd4a3656155e0096\u0022,\u0022socketUrl\u0022\u003A\u0022https\u003A\\\/\\\/nodejs\u002Ddcg.smartschool.be\u0022,\u0022socketPort\u0022\u003A\u0022443\u0022,\u0022queueUuid\u0022\u003A\u00228df37260\u002D17ff\u002D40b8\u002D98ba\u002D46ea67f91e8b\u0022,\u0022userID\u0022\u003A14025,\u0022lng_rpc_error_title\u0022\u003A\u0022Melding\u0022,\u0022lng_rpc_error_unknown_msg\u0022\u003A\u0022Er\u0020is\u0020een\u0020onbekende\u0020fout\u0020opgetreden.\u0022,\u0022lng_rpc_error_not_found\u0022\u003A\u0022Het\u0020onderdeel\u0020dat\u0020je\u0020zoekt\u0020is\u0020niet\u0020gevonden.\u0020Mogelijk\u0020is\u0020het\u0020verwijderd\u0020of\u0020onzichtbaar\u0020gemaakt.\u0022,\u0022lng_rpc_error_close\u0022\u003A\u0022Sluiten\u0022,\u0022lng_rpc_error_ok\u0022\u003A\u0022OK\u0022,\u0022lng_rpc_following_errors_appeared\u0022\u003A\u0022Volgende\u0020fouten\u0020zijn\u0020opgetreden\u0022\u007D\u007D'));</script>
+
+                                        <script type="text/javascript">$.extend(true, SMSC, JSON.parse('\u007B\u0022quickSearch\u0022\u003A\u007B\u0022quicksearch.search_placeholder\u0022\u003A\u0022Zoeken...\u0022,\u0022quicksearch.search_option_own\u002Dplatform\u002Donly\u0022\u003A\u0022Enkel\u0020in\u0020eigen\u0020platform\u0020zoeken\u0022,\u0022quicksearch.search_option_include\u002Ddeleted\u0022\u003A\u0022Ook\u0020\u003Cspan\u0020style\u003D\\\u0022color\u003A\u0023E30000\u003B\u0020font\u002Dweight\u003A\u0020bold\u003B\\\u0022\u003Everwijderde\u003C\\\/span\u003E\u0020gebruikers\u0020tonen\u0022,\u0022quicksearch.default_deleted_string\u0022\u003A\u0022verwijderd\u0022,\u0022quicksearch.search_not_found\u0022\u003A\u0022We\u0020hebben\u0020__SEARCHSTRING__\u0020niet\u0020gevonden.\u0020Probeer\u0020een\u0020andere\u0020zoekterm.\u0022,\u0022quicksearch.search_subtitle_suggestions\u0022\u003A\u0022Suggesties\u0022,\u0022quicksearch.currentUser\u0022\u003A\u0022Aangemelde\u0020gebruiker\u0022,\u0022quicksearch.me\u0022\u003A\u0022Mezelf\u0022,\u0022quicksearch.all_students\u0022\u003A\u0022Alle\u0020leerlingen\u0022,\u0022planner.user_role.1\u0022\u003A\u0022Alle\u0020leerlingen\u0022,\u0022quicksearch.unassigned\u0022\u003A\u0022Niemand\u0022,\u0022quicksearch.search_subtitle_favourites\u0022\u003A\u0022Favorieten\u0022,\u0022quicksearch.mark_as_favourite\u0022\u003A\u0022Toevoegen\u0020aan\u0020favorieten\u0022,\u0022quicksearch.discard_as_favourite\u0022\u003A\u0022Verwijderen\u0020uit\u0020favorieten\u0022\u007D,\u0022vars\u0022\u003A\u007B\u0022locale\u0022\u003A\u0022nl\u0022,\u0022userPictureDomain\u0022\u003A\u0022https\u003A\\\/\\\/userpicture10.smartschool.be\u0022,\u0022currentUser\u0022\u003A\u007B\u0022userIdentifier\u0022\u003A\u00223627_14025_0\u0022,\u0022userPictureHash\u0022\u003A\u00223627_f1f894aa\u002D0019\u002D4c2f\u002Dad87\u002Db2f7e7424e72\u0022,\u0022userPictureUrl\u0022\u003A\u0022https\u003A\\\/\\\/userpicture10.smartschool.be\\\/User\\\/Userimage\\\/hashimage\\\/hash\\\/3627_f1f894aa\u002D0019\u002D4c2f\u002Dad87\u002Db2f7e7424e72\\\/plain\\\/1\\\/res\\\/128\u0022,\u0022name\u0022\u003A\u0022Adam\u0020Ariss\u0022,\u0022nameReverse\u0022\u003A\u0022Ariss\u0020Adam\u0022,\u0022description\u0022\u003A\u0022\u0022,\u0022descriptionReverse\u0022\u003A\u0022\u0022\u007D,\u0022tinyMCEVersion\u0022\u003A\u00226.1.0\u0022,\u0022ssID\u0022\u003A3627\u007D\u007D'));</script>
+
+            <script type="text/javascript">$.extend(true, SMSC, JSON.parse('\u007B\u0022wopiConfig\u0022\u003A\u007B\u0022wopiActions\u0022\u003A\u007B\u0022pdf\u0022\u003A\u007B\u0022view\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022Pdf\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/mime_pdf\\\/mime_pdf_16x16.png\u0022\u007D\u007D,\u0022csv\u0022\u003A\u007B\u0022view\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022Excel\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/Excel\u002Dcolor\\\/Excel\u002Dcolor_16x16.png\u0022\u007D,\u0022convert\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022Excel\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/Excel\u002Dcolor\\\/Excel\u002Dcolor_16x16.png\u0022\u007D\u007D,\u0022ods\u0022\u003A\u007B\u0022view\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022Excel\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/Excel\u002Dcolor\\\/Excel\u002Dcolor_16x16.png\u0022\u007D,\u0022edit\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022Excel\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/Excel\u002Dcolor\\\/Excel\u002Dcolor_16x16.png\u0022\u007D\u007D,\u0022xls\u0022\u003A\u007B\u0022view\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022Excel\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/Excel\u002Dcolor\\\/Excel\u002Dcolor_16x16.png\u0022\u007D,\u0022convert\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022Excel\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/Excel\u002Dcolor\\\/Excel\u002Dcolor_16x16.png\u0022\u007D\u007D,\u0022xlsb\u0022\u003A\u007B\u0022view\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022Excel\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/Excel\u002Dcolor\\\/Excel\u002Dcolor_16x16.png\u0022\u007D,\u0022edit\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022Excel\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/Excel\u002Dcolor\\\/Excel\u002Dcolor_16x16.png\u0022\u007D\u007D,\u0022xlsm\u0022\u003A\u007B\u0022view\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022Excel\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/Excel\u002Dcolor\\\/Excel\u002Dcolor_16x16.png\u0022\u007D,\u0022edit\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022Excel\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/Excel\u002Dcolor\\\/Excel\u002Dcolor_16x16.png\u0022\u007D\u007D,\u0022xlsx\u0022\u003A\u007B\u0022view\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022Excel\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/Excel\u002Dcolor\\\/Excel\u002Dcolor_16x16.png\u0022\u007D,\u0022edit\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022Excel\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/Excel\u002Dcolor\\\/Excel\u002Dcolor_16x16.png\u0022\u007D\u007D,\u0022odp\u0022\u003A\u007B\u0022view\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022PowerPoint\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/PowerPoint\u002Dcolor\\\/PowerPoint\u002Dcolor_16x16.png\u0022\u007D,\u0022edit\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022PowerPoint\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/PowerPoint\u002Dcolor\\\/PowerPoint\u002Dcolor_16x16.png\u0022\u007D\u007D,\u0022pot\u0022\u003A\u007B\u0022view\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022PowerPoint\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/PowerPoint\u002Dcolor\\\/PowerPoint\u002Dcolor_16x16.png\u0022\u007D\u007D,\u0022potm\u0022\u003A\u007B\u0022view\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022PowerPoint\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/PowerPoint\u002Dcolor\\\/PowerPoint\u002Dcolor_16x16.png\u0022\u007D\u007D,\u0022potx\u0022\u003A\u007B\u0022view\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022PowerPoint\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/PowerPoint\u002Dcolor\\\/PowerPoint\u002Dcolor_16x16.png\u0022\u007D\u007D,\u0022pps\u0022\u003A\u007B\u0022view\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022PowerPoint\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/PowerPoint\u002Dcolor\\\/PowerPoint\u002Dcolor_16x16.png\u0022\u007D,\u0022convert\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022PowerPoint\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/PowerPoint\u002Dcolor\\\/PowerPoint\u002Dcolor_16x16.png\u0022\u007D\u007D,\u0022ppsm\u0022\u003A\u007B\u0022view\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022PowerPoint\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/PowerPoint\u002Dcolor\\\/PowerPoint\u002Dcolor_16x16.png\u0022\u007D\u007D,\u0022ppsx\u0022\u003A\u007B\u0022view\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022PowerPoint\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/PowerPoint\u002Dcolor\\\/PowerPoint\u002Dcolor_16x16.png\u0022\u007D,\u0022edit\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022PowerPoint\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/PowerPoint\u002Dcolor\\\/PowerPoint\u002Dcolor_16x16.png\u0022\u007D\u007D,\u0022ppt\u0022\u003A\u007B\u0022view\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022PowerPoint\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/PowerPoint\u002Dcolor\\\/PowerPoint\u002Dcolor_16x16.png\u0022\u007D,\u0022convert\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022PowerPoint\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/PowerPoint\u002Dcolor\\\/PowerPoint\u002Dcolor_16x16.png\u0022\u007D\u007D,\u0022pptm\u0022\u003A\u007B\u0022view\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022PowerPoint\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/PowerPoint\u002Dcolor\\\/PowerPoint\u002Dcolor_16x16.png\u0022\u007D\u007D,\u0022pptx\u0022\u003A\u007B\u0022view\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022PowerPoint\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/PowerPoint\u002Dcolor\\\/PowerPoint\u002Dcolor_16x16.png\u0022\u007D,\u0022edit\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022PowerPoint\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/PowerPoint\u002Dcolor\\\/PowerPoint\u002Dcolor_16x16.png\u0022\u007D\u007D,\u0022vdw\u0022\u003A\u007B\u0022view\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022Visio\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/Visio\u002Dcolor\\\/Visio\u002Dcolor_16x16.png\u0022\u007D\u007D,\u0022vsd\u0022\u003A\u007B\u0022view\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022Visio\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/Visio\u002Dcolor\\\/Visio\u002Dcolor_16x16.png\u0022\u007D\u007D,\u0022vsdm\u0022\u003A\u007B\u0022view\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022Visio\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/Visio\u002Dcolor\\\/Visio\u002Dcolor_16x16.png\u0022\u007D\u007D,\u0022vsdx\u0022\u003A\u007B\u0022view\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022Visio\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/Visio\u002Dcolor\\\/Visio\u002Dcolor_16x16.png\u0022\u007D,\u0022edit\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022Visio\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/Visio\u002Dcolor\\\/Visio\u002Dcolor_16x16.png\u0022\u007D\u007D,\u0022wopitest\u0022\u003A\u007B\u0022view\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022WopiTest\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/WopiTest\u002Dcolor\\\/WopiTest\u002Dcolor_16x16.png\u0022\u007D,\u0022edit\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022WopiTest\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/WopiTest\u002Dcolor\\\/WopiTest\u002Dcolor_16x16.png\u0022\u007D\u007D,\u0022wopitestx\u0022\u003A\u007B\u0022view\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022WopiTest\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/WopiTest\u002Dcolor\\\/WopiTest\u002Dcolor_16x16.png\u0022\u007D,\u0022edit\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022WopiTest\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/WopiTest\u002Dcolor\\\/WopiTest\u002Dcolor_16x16.png\u0022\u007D\u007D,\u0022doc\u0022\u003A\u007B\u0022view\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022Word\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/Word\u002Dcolor\\\/Word\u002Dcolor_16x16.png\u0022\u007D,\u0022convert\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022Word\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/Word\u002Dcolor\\\/Word\u002Dcolor_16x16.png\u0022\u007D\u007D,\u0022docm\u0022\u003A\u007B\u0022view\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022Word\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/Word\u002Dcolor\\\/Word\u002Dcolor_16x16.png\u0022\u007D,\u0022edit\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022Word\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/Word\u002Dcolor\\\/Word\u002Dcolor_16x16.png\u0022\u007D\u007D,\u0022docx\u0022\u003A\u007B\u0022view\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022Word\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/Word\u002Dcolor\\\/Word\u002Dcolor_16x16.png\u0022\u007D,\u0022edit\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022Word\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/Word\u002Dcolor\\\/Word\u002Dcolor_16x16.png\u0022\u007D\u007D,\u0022dot\u0022\u003A\u007B\u0022view\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022Word\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/Word\u002Dcolor\\\/Word\u002Dcolor_16x16.png\u0022\u007D\u007D,\u0022dotm\u0022\u003A\u007B\u0022view\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022Word\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/Word\u002Dcolor\\\/Word\u002Dcolor_16x16.png\u0022\u007D\u007D,\u0022dotx\u0022\u003A\u007B\u0022view\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022Word\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/Word\u002Dcolor\\\/Word\u002Dcolor_16x16.png\u0022\u007D\u007D,\u0022odt\u0022\u003A\u007B\u0022view\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022Word\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/Word\u002Dcolor\\\/Word\u002Dcolor_16x16.png\u0022\u007D,\u0022edit\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022Word\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/Word\u002Dcolor\\\/Word\u002Dcolor_16x16.png\u0022\u007D\u007D,\u0022rtf\u0022\u003A\u007B\u0022view\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022Word\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/Word\u002Dcolor\\\/Word\u002Dcolor_16x16.png\u0022\u007D\u007D,\u0022b\u0022\u003A\u007B\u0022view\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022WordPrague\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/WordPrague\u002Dcolor\\\/WordPrague\u002Dcolor_16x16.png\u0022\u007D\u007D,\u0022fluid\u0022\u003A\u007B\u0022view\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022WordPrague\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/WordPrague\u002Dcolor\\\/WordPrague\u002Dcolor_16x16.png\u0022\u007D\u007D,\u0022note\u0022\u003A\u007B\u0022view\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022WordPrague\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/WordPrague\u002Dcolor\\\/WordPrague\u002Dcolor_16x16.png\u0022\u007D\u007D,\u0022whiteboard\u0022\u003A\u007B\u0022view\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022WordPrague\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/WordPrague\u002Dcolor\\\/WordPrague\u002Dcolor_16x16.png\u0022\u007D\u007D\u007D,\u0022allowCreate\u0022\u003Atrue\u007D\u007D'));</script>
+
+
+          
+        <!-- javascriptContent Body  -->
+                                        <script type="text/javascript">;(function(window, document, $, undefined) { $(document).ready(function(e){ $.datepicker.setDefaults($.datepicker.regional['nl-BE']); }); })(window, document, jQuery);</script>
+            <script type="text/javascript">
+		var jsTemplates 						= {"tpl_js_homepage_pns_news_all":"<div class=\"news__feed\">    <button class=\"news__feed__button\" onclick=\"oPns.showNewsInDialog({newsID}, {editable})\" style=\"background-image: url('{ico_img}');\">        <div class=\"news__feed__button__content\" style=\"color: #{titleColor}\">            <span class=\"news__feed__button__content--title\">{title}<\/span>            <span class=\"news__feed__button__content--name-date\">{name}{date}<\/span>        <\/div>    <\/button><\/div>"};
+		var _NO_ITEM_AVAILABLE					= 'U heeft momenteel geen nieuwe items.';
+		var _NO_NEWS_AVAILABLE					= 'Er bevinden zich geen nieuwe nieuwsberichten in deze categorie.';
+		var _ACTIONS_MORE						= 'Meer acties';
+		var _ACTIONS_ACTION						= 'Dit bestand opslaan';
+		var _ACTIONS_VIEW_VISIBLE				= 'Maak zichtbaar';
+		var _ACTIONS_VIEW_INVISIBLE				= 'Maak onzichtbaar';
+		var _ACTIONS_DISABLE_MODTYPE			= 'Verberg alles van deze module';
+		var _PNS_DISABLEDFORMAINTENACE_TITLE	= 'Geplande onderhoudswerken';
+		var _PNS_DISABLEDFORMAINTENACE_SUBTITLE	= 'Wegens geplande onderhoudswerken is dit onderdeel even niet beschikbaar.';
+		var _DATEPICKER_CALENDAR				= 'Open mijn kalender';
+		var _DATEPICKER_AGENDA					= 'Open mijn schoolagenda';
+		var _DATEPICKER_PLANNER					= 'Open mijn planner';
+	</script>
+            <script type="text/javascript">var _LNG_ERROR_TITLE= 'Melding';var _LNG_ERROR_MSG= 'Er is een onbekende fout opgetreden waardoor de gevraagde actie niet kon worden uitgevoerd. Vernieuw de pagina (F5) of meld u opnieuw aan indien uw sessie verlopen is.';var _LNG_PHOTOSTRIPNAVLEFT = 'Navigeer links';var _LNG_PHOTOSTRIPNAVRIGHT = 'Navigeer rechts';var _LNG_PHOTOSTRIPGOTOALBUM = 'Ga naar album';var _LNG_PHOTOSTRIPCLICKTOCLOSE = 'Klik om te sluiten';var _LNG_PHOTOSTRIPCLICKTOENLARGE = 'Klik om te vergroten';var _LNG_FOLDERFILESTRIPCLICKFOLDER = 'Klik om deze map binnen te gaan';var _LNG_FOLDERFILESTRIPCLICKFILE = 'Klik om dit bestand te downloaden';var _LNG_FOLDERFILESTRIPCLICKGOUP = 'Klik om een niveau naar boven te gaan';var _LNG_FOLDERFILESTRIPCLICKGOUP_TEXT = 'Terug naar bovenliggende map';var _LNG_FOLDERFILESTRIPCLICKFILE_OPEN = 'Klik om dit bestand te openen';var _LNG_FOLDERFILESTRIPNOCONTENT = 'Deze map is leeg';var _LNG_LIGHTBOX_IMAGE= 'Afbeelding';var _LNG_LIGHTBOX_OF= 'van';</script>
+            <script type="text/javascript">$.extend(true, SMSC, { vars : {"lng":{"add_klas":"Klas toevoegen","news":{"news_dialog":{"close":"Sluiten"},"edit_news":{"edit_news_close":"Sluiten","edit_news_save":"Opslaan","edit_news_save_and_notify":"Opslaan en melden","edit_news_tab_message":"Bericht","edit_news_tab_options":"Opties","edit_news_tab_groups":"Groepen","edit_news_tab_idk":"In de kijker","edit_news_form_title":"Titel","edit_news_form_message":"Inhoud","edit_news_form_visible":"Zichtbaar","edit_news_form_visible_from":"van ...","edit_news_form_visible_until":"tot ...","edit_news_form_agenda":"Tonen in kalender","edit_news_form_agenda_from":"van ...","edit_news_form_agenda_until":"tot ...","edit_news_form_community":"Community","edit_news_form_icon":"Icoon","edit_news_form_idk_show_in_browser_label":"Browser","edit_news_form_idk_show_in_browser":"Nieuwsbericht 'in de kijker' tonen op de startpagina in de browser","edit_news_form_idk_position_left":"links","edit_news_form_idk_position_top":"midden boven","edit_news_form_idk_position_bottom":"midden onder","edit_news_form_idk_position_right":"rechts","edit_news_form_idk_show_in_app_label":"App","edit_news_form_idk_show_in_app":"Nieuwsbericht 'in de kijker' tonen in de app","edit_news_form_idk_show_in_app_info":"In de app worden 'strips' niet getoond.","edit_news_form_idk_show_in_list_label":"Extra in lijst","edit_news_form_idk_show_in_list":"Nieuwsbericht ook nog eens in de lijst met de gewone nieuwsberichten tonen","edit_news_form_idk_show_in_list_info":"Een 'in de kijker'-bericht wordt standaard niet in de lijst met de gewone nieuwsberichten getoond. Met deze optie kan je dit nieuwsbericht wel in de lijst tonen tussen alle andere nieuwsberichten. Met deze optie staat het bericht dus 'in de kijker' \u00e9n in de lijst.","edit_news_form_idk_info_title_1":"Wat is een 'in de kijker'-bericht?","edit_news_form_idk_info_content_1":"Een 'in de kijker'-bericht is <b>een blokje op de startpagina<\/b> van Smartschool in de browser of in de app. Hierdoor staat het nieuwsbericht 'in de kijker', dus valt het meteen op. Gebruik 'in de kijker'-berichten om het belangrijkste nieuws of foto's van uitstappen onder de aandacht te brengen.","edit_news_form_idk_info_title_2":"Hoe worden 'in de kijker'-berichten gesorteerd?","edit_news_form_idk_info_content_2":"De 'in de kijker'-berichten worden gesorteerd volgens de wijzigdatum. <b>Het bericht dat als laatste werd gewijzigd staat onderaan.<\/b> De uitzondering hierop is het wijzigen van het bericht via de startpagina zelf.","edit_news_form_idk_info_link_href":"\/index.php?module=Manual&file=manual&layout=2&id=handleiding:nieuwsberichten:in-de-kijker","edit_news_form_idk_info_link_label":"Lees alle informatie in de handleiding.","edit_news_form_publish":"Publiceer dit nieuwsbericht voor","edit_news_form_publish_head":"Hoofdaccounts","edit_news_form_publish_co":"Co-accounts","edit_news_form_publish_usc":"Selecteer groepen","edit_news_button":"Wijzigen","edit_news_title":"Nieuwsbericht wijzigen","edit_news_cancel":"Annuleren","edit_news_info":"De wijzigdatum van dit nieuwsbericht wordt niet gewijzigd. Hierdoor blijft het nieuwsbericht op dezelfde plaats staan op de startpagina.","edit_news_form_color":"Kleur titel"}},"studentSupport":{"student_support_name":"Diensten voor jongeren","student_support_empty_state":"Er zijn geen diensten voor jongeren zichtbaar voor je."}},"login":{"isWithAcm":false}}});</script>
+    
+                                <script type="text/javascript">$.extend(true, SMSC, JSON.parse('\u007B\u0022topnav\u0022\u003A\u007B\u0022lang\u0022\u003A\u007B\u0022badge\u0022\u003A\u007B\u0022badge_unread_notifs\u0022\u003A\u0022Ongelezen\u0020meldingen\u0022\u007D,\u0022courses\u0022\u003A\u007B\u0022courses_menu_title\u0022\u003A\u0022Vakken\u0022,\u0022courses_menu_search_placeholder\u0022\u003A\u0022Zoek\u0020naar\u0020een\u0020vak\u0022,\u0022courses_menu_no_courses\u0022\u003A\u0022Geen\u0020vakken\u0020gevonden\u0022\u007D,\u0022filter\u0022\u003A\u007B\u0022filter_sections_communication\u0022\u003A\u0022Communicatie\u0022,\u0022filter_sections_files\u0022\u003A\u0022Bestanden\u0022,\u0022filter_sections_mycourses\u0022\u003A\u0022Vakken\u0022,\u0022filter_sections_others\u0022\u003A\u0022Anderen\u0022,\u0022filter_options_sort_filter\u0022\u003A\u0022Sorteren\u0020en\u0020filteren\u0022,\u0022filter_filter_sort\u0022\u003A\u0022Sortering\u0022,\u0022filter_filter_bydate\u0022\u003A\u0022Filter\u0020op\u0020periode\u0022\u007D,\u0022go\u0022\u003A\u007B\u0022link.go.name\u0022\u003A\u0022GO\u0021\u0022,\u0022link.go_pro.name\u0022\u003A\u0022GO\u0021\u0020pro\u0022,\u0022link.go_training.name\u0022\u003A\u0022GO\u0021\u0020ondersteuningsaanbod\u0022,\u0022link.go_parents.name\u0022\u003A\u0022GO\u0021\u0020ouders\u0022,\u0022link.go_clb.name\u0022\u003A\u0022GO\u0021\u0020CLB\u0022,\u0022link.go_pro_curricula.name\u0022\u003A\u0022GO\u0021\u0020pro\u0020leerplannen\u0022,\u0022courses_menu_title\u0022\u003A\u0022Mijn\u0020virtuele\u0020ruimtes\u0022,\u0022link_menu_title\u0022\u003A\u0022Snel\u0020naar\u0022,\u0022curriculum_menu_title\u0022\u003A\u0022GO\u0021\u0020leerplannen\u0022,\u0022link_virtualSpace\u0022\u003A\u0022Op\u0020virtuele\u0020ruimtes\u0020van\u0020het\u0020GO\u0021\u0020abonneren\u0022\u007D,\u0022notifications\u0022\u003A\u007B\u0022notifs_placeholder\u0022\u003A\u0022Er\u0020zijn\u0020geen\u0020meldingen.\u0020Je\u0020bent\u0020volledig\u0020up\u002Dto\u002Ddate\u0021\u0022,\u0022notifs_toggle\u0022\u003A\u0022Nieuwe\u0020meldingen\u0020tonen\u0020als\u0020pop\u002Dup\u0022,\u0022notifs_toggle_on\u0022\u003A\u0022Aan\u0022,\u0022notifs_toggle_off\u0022\u003A\u0022Uit\u0022,\u0022notifs_settings\u0022\u003A\u0022Instellingen\u0022,\u0022notifs_clear\u0022\u003A\u0022Alles\u0020wissen\u0022,\u0022notifs_error\u0022\u003A\u0022Het\u0020ophalen\u0020van\u0020de\u0020meldingen\u0020is\u0020mislukt.\u0020Vernieuw\u0020de\u0020pagina\u0020en\u0020probeer\u0020opnieuw.\u0022\u007D,\u0022notification\u0022\u003A\u007B\u0022notif_mark_as_read\u0022\u003A\u0022Uit\u0020de\u0020lijst\u0020verwijderen\u0022\u007D,\u0022profile\u0022\u003A\u007B\u0022profile_img_alt\u0022\u003A\u0022Profiel\u0020afbeelding\u0022\u007D,\u0022search\u0022\u003A\u007B\u0022search_input_placeholder\u0022\u003A\u0022Zoeken\u0022,\u0022search_results_placeholder\u0022\u003A\u0022Waar\u0020ben\u0020je\u0020naar\u0020op\u0020zoek\u003F\u0022,\u0022search_more_results\u0022\u003A\u0022Toon\u0020meer\u0020resultaten\u0022,\u0022search_no_results\u0022\u003A\u0022Er\u0020werden\u0020geen\u0020resultaten\u0020gevonden.\u0022,\u0022search_searching\u0022\u003A\u0022Bezig\u0020met\u0020zoeken\u0020...\u0022,\u0022search_info\u0022\u003A\u0022Geef\u0020een\u0020zoekterm\u0020in\u0020en\u0020druk\u0020op\u0020enter\u0020om\u0020te\u0020zoeken.\u0022,\u0022search_from\u0022\u003A\u0022van\u0022,\u0022search_to\u0022\u003A\u0022naar\u0022,\u0022search_module_persons\u0022\u003A\u0022Personen\u0022,\u0022search_time_all\u0022\u003A\u0022Toon\u0020alles\u0022,\u0022search_time_today\u0022\u003A\u0022Vandaag\u0022,\u0022search_time_last_7_days\u0022\u003A\u0022Deze\u0020week\u0022,\u0022search_time_last_30_days\u0022\u003A\u0022Deze\u0020maand\u0022,\u0022search_time_current_schoolyear\u0022\u003A\u0022Dit\u0020schooljaar\u0022,\u0022search_checkbox_own_platform\u0022\u003A\u0022Enkel\u0020in\u0020eigen\u0020platform\u0020zoeken\u0022\u007D,\u0022toast\u0022\u003A\u007B\u0022toast_close\u0022\u003A\u0022Sluiten\u0022\u007D,\u0022toaster\u0022\u003A\u007B\u0022toaster_sessionextender_title\u0022\u003A\u0022Wilt\u0020u\u0020aangemeld\u0020blijven\u003F\u0022,\u0022toaster_sessionextender_description\u0022\u003A\u0022U\u0020wordt\u0020automatisch\u0020afgemeld\u0020binnen\u0020___id___\u0020seconden.\u0022,\u0022toaster_sessionextender_button\u0022\u003A\u0022OK\u0022\u007D\u007D\u007D\u007D'));</script>
+
+            <!-- Javascript_Topnav -->
+                                        <script type="text/javascript" src="https://static5.smart-school.net/production/Topnav/main.rev-aa1d5652e5.js"></script>
+    
+                            <!-- Javascript_Body_Urls -->
+                                <script type="text/javascript" src="https://static3.smart-school.net/smsc/resources/requirejs/2.3.3/require.min.rev-cc2c2a1ad9.js"></script>
+            <script type="text/javascript" src="https://static3.smart-school.net/modules/Homepage/dist/main-built.rev-4a7b554316.js"></script>
+            <script type="text/javascript" src="https://static3.smart-school.net/includes/jQuery/plugins/timepicker/langs/jquery.ui.timepicker-nl.rev-d3dec931f0.js"></script>
+    
+                <!-- Javascript_requirejs_Urls -->
+                        
+        		<!-- Javascript_legacy_stealjs_Urls -->
+                        
+                
+        <!-- Javascript_symfony -->
+                                    
+                </body>
+</html>
